@@ -107,9 +107,9 @@ extension RestClient {
     /// This model object's properties need to match the Salesforce Schema
     ///   at least in part.
     public struct QueryResponse<Record: Decodable>: Decodable {
-      var totalSize: Int?
-      var done: Bool?
-      var records: [Record]?
+        public var totalSize: Int?
+        public var done: Bool?
+        public var records: [Record]?
     }
     
     /// Execute a prebuilt request.
